@@ -1,0 +1,198 @@
+/* Attendance Insights & Bunk Calculator Styles - Isolated */
+#juno-attendance-panel,
+#juno-attendance-panel * {
+  box-sizing: border-box !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+}
+
+#juno-attendance-panel {
+  position: fixed !important;
+  top: 75px !important;
+  right: 20px !important;
+  width: 340px !important;
+  max-height: 85vh !important;
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 10px !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18), 0 4px 10px rgba(0, 0, 0, 0.08) !important;
+  color: #1e293b !important;
+  z-index: 9999999 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  user-select: none !important;
+}
+
+#juno-attendance-panel.minimized .juno-attendance-body {
+  display: none !important;
+}
+
+.juno-attendance-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 10px 14px !important;
+  background: #095899 !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  cursor: move !important;
+  margin: 0 !important;
+  border-top-left-radius: 9px !important;
+  border-top-right-radius: 9px !important;
+  flex-shrink: 0 !important;
+}
+
+.juno-attendance-title {
+  display: flex !important;
+  align-items: center !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+}
+
+.juno-attendance-header-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.juno-btn-icon {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border: none !important;
+  color: #ffffff !important;
+  border-radius: 4px !important;
+  width: 24px !important;
+  height: 24px !important;
+  min-width: 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 15px !important;
+  cursor: pointer !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+}
+
+.juno-btn-icon:hover {
+  background: rgba(255, 255, 255, 0.35) !important;
+}
+
+.juno-attendance-body {
+  padding: 12px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  background: #f8fafc !important;
+  overflow-y: auto !important;
+  flex-grow: 1 !important;
+}
+
+
+/* Overall Attendance Card */
+.juno-overall-card {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 8px !important;
+  padding: 10px 12px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 4px !important;
+}
+
+.juno-overall-header {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #1e293b !important;
+}
+
+.juno-overall-advice {
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+  font-weight: 500 !important;
+}
+
+.juno-overall-advice.danger {
+  color: #b91c1c !important;
+}
+
+.juno-overall-advice.warning {
+  color: #d97706 !important;
+}
+
+.juno-overall-advice.safe {
+  color: #15803d !important;
+}
+
+/* Subject list */
+.juno-subject-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+}
+
+.juno-subject-item {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 6px !important;
+  padding: 8px 10px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 4px !important;
+}
+
+.juno-subject-title {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  color: #1e293b !important;
+  line-height: 1.3 !important;
+}
+
+.juno-subject-stat-row {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 2px !important;
+  font-size: 11px !important;
+  line-height: 1.3 !important;
+}
+
+.juno-subject-percent {
+  font-weight: 700 !important;
+}
+
+.juno-subject-percent.safe {
+  color: #15803d !important;
+}
+
+.juno-subject-percent.warning {
+  color: #d97706 !important;
+}
+
+.juno-subject-percent.danger {
+  color: #dc2626 !important;
+}
+
+.juno-subject-advice {
+  font-weight: 500 !important;
+}
+
+.juno-subject-advice.safe {
+  color: #15803d !important;
+}
+
+.juno-subject-advice.warning {
+  color: #d97706 !important;
+}
+
+.juno-subject-advice.danger {
+  color: #b91c1c !important;
+}
+
+/* Empty state */
+.juno-empty-state {
+  text-align: center !important;
+  padding: 20px 10px !important;
+  color: #64748b !important;
+  font-size: 12px !important;
+}
